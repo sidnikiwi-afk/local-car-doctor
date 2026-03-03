@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Car Doctor | Contract Vehicle Technician Cover — Bradford, Leeds & West Yorkshire</title>
+    <meta name="description" content="Skilled contract vehicle technician cover for dealerships and garages across Bradford, Leeds & West Yorkshire. Available at short notice when you're short-staffed.">
+    <meta name="keywords" content="contract vehicle technician, temporary mechanic cover, dealership technician, garage cover, Bradford, Leeds, West Yorkshire">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Local Car Doctor — Contract Technician Cover">
+    <meta property="og:description" content="Skilled contract vehicle technician cover for dealerships and garages across Bradford, Leeds & West Yorkshire.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://localcardoctor.com">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23102A43'/><text x='5' y='23' font-family='sans-serif' font-weight='800' font-size='18' fill='%234B9CD3'>LC</text><circle cx='27' cy='7' r='3' fill='%2356B4E8'/></svg>">
+
+    <style>
+        :root {
+            --navy-900: #0A1628;
+            --navy-800: #102A43;
+            --navy-700: #1A3A5C;
+            --navy-600: #244E74;
+            --navy-500: #2E6490;
+            --steel: #4B9CD3;
+            --steel-light: #56B4E8;
+            --steel-pale: #A8D8F0;
+            --ice: #E8F4FD;
+            --white: #FFFFFF;
+            --off-white: #F5F8FC;
+            --grey-100: #EEF2F7;
+            --grey-200: #D9E2EC;
+            --grey-400: #9FB3C8;
+            --grey-600: #627D98;
+            --grey-800: #334E68;
+            --text: #1F2937;
+            --text-muted: #486581;
+            --shadow-sm: 0 1px 3px rgba(10, 22, 40, 0.08);
+            --shadow-md: 0 4px 16px rgba(10, 22, 40, 0.10);
+            --shadow-lg: 0 8px 40px rgba(10, 22, 40, 0.12);
+            --shadow-xl: 0 16px 56px rgba(10, 22, 40, 0.16);
+            --radius: 10px;
+            --radius-lg: 16px;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Libre Franklin', sans-serif;
+            color: var(--text);
+            background: var(--off-white);
+            line-height: 1.7;
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        /* ─── UTILITY ────────────────────────────────── */
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-label {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--steel);
+            margin-bottom: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-label::before {
+            content: '';
+            display: block;
+            width: 28px;
+            height: 2px;
+            background: var(--steel);
+            border-radius: 2px;
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 800;
+            line-height: 1.15;
+            color: var(--navy-800);
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            max-width: 540px;
+            margin-top: 12px;
+            line-height: 1.7;
+        }
+
+        /* ─── ANIMATIONS ─────────────────────────────── */
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(28px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideRight {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.92); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes dash {
+            to { stroke-dashoffset: 0; }
+        }
+
+        [data-animate] {
+            opacity: 0;
+        }
+
+        [data-animate].visible {
+            animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+
+        [data-animate="fade"].visible {
+            animation-name: fadeIn;
+        }
+
+        [data-animate="slide"].visible {
+            animation-name: slideRight;
+        }
+
+        [data-animate="scale"].visible {
+            animation-name: scaleIn;
+        }
+
+        /* ─── NAV ─────────────────────────────────────── */
+
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 16px 0;
+            transition: all 0.35s ease;
+        }
+
+        .nav.scrolled {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(10, 22, 40, 0.06);
+            padding: 10px 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .nav-logo {
+            width: 38px;
+            height: 38px;
+            background: var(--navy-800);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .nav-logo svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .nav-brand-text {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1.15rem;
+            color: var(--navy-800);
+            letter-spacing: -0.02em;
+        }
+
+        .nav-brand-text span {
+            color: var(--steel);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--grey-600);
+            text-decoration: none;
+            transition: color 0.2s;
+            letter-spacing: 0.01em;
+        }
+
+        .nav-links a:hover {
+            color: var(--navy-800);
+        }
+
+        .nav-phone {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--navy-800);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-phone svg {
+            width: 16px;
+            height: 16px;
+            color: var(--steel);
+        }
+
+        .nav-cta {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--white);
+            background: var(--navy-800);
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            letter-spacing: 0.01em;
+        }
+
+        .nav-cta:hover {
+            background: var(--navy-700);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(16, 42, 67, 0.3);
+        }
+
+        .nav-hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+        }
+
+        .nav-hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--navy-800);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-hamburger span + span {
+            margin-top: 6px;
+        }
+
+        /* ─── MOBILE NAV ──────────────────────────────── */
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(10, 22, 40, 0.5);
+            backdrop-filter: blur(8px);
+            z-index: 99;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-menu.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .mobile-menu-panel {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: min(320px, 85vw);
+            height: 100%;
+            background: var(--white);
+            padding: 80px 32px 32px;
+            transform: translateX(100%);
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+            box-shadow: -8px 0 40px rgba(10, 22, 40, 0.15);
+        }
+
+        .mobile-menu.open .mobile-menu-panel {
+            transform: translateX(0);
+        }
+
+        .mobile-menu-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .mobile-menu-links a {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--navy-800);
+            text-decoration: none;
+            padding: 12px 0;
+            display: block;
+            border-bottom: 1px solid var(--grey-100);
+            transition: color 0.2s;
+        }
+
+        .mobile-menu-links a:hover {
+            color: var(--steel);
+        }
+
+        .mobile-menu-cta {
+            display: block;
+            text-align: center;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--white);
+            background: var(--navy-800);
+            padding: 14px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-top: 24px;
+        }
+
+        .mobile-close {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+
+        .mobile-close:hover {
+            background: var(--grey-100);
+        }
+
+        .mobile-close svg {
+            width: 20px;
+            height: 20px;
+            color: var(--navy-800);
+        }
+
+        /* ─── HERO ─────────────────────────────────────── */
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: var(--navy-900);
+            overflow: hidden;
+            padding: 120px 0 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 70% 30%, rgba(75, 156, 211, 0.12) 0%, transparent 60%),
+                radial-gradient(ellipse 50% 50% at 20% 80%, rgba(75, 156, 211, 0.06) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        /* Blueprint grid effect */
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(75, 156, 211, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(75, 156, 211, 0.04) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text {
+            animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(75, 156, 211, 0.12);
+            border: 1px solid rgba(75, 156, 211, 0.2);
+            padding: 6px 14px;
+            border-radius: 100px;
+            margin-bottom: 24px;
+        }
+
+        .hero-badge-dot {
+            width: 7px;
+            height: 7px;
+            background: #34D399;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .hero-badge span {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--steel-pale);
+            letter-spacing: 0.04em;
+        }
+
+        .hero h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(2.2rem, 5vw, 3.4rem);
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 em {
+            font-style: normal;
+            color: var(--steel-light);
+        }
+
+        .hero-sub {
+            font-size: 1.1rem;
+            color: var(--grey-400);
+            max-width: 460px;
+            line-height: 1.75;
+            margin-bottom: 36px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--navy-900);
+            background: var(--steel-light);
+            padding: 14px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.25s ease;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.01em;
+        }
+
+        .btn-primary:hover {
+            background: var(--steel-pale);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(75, 156, 211, 0.3);
+        }
+
+        .btn-primary svg {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.2s;
+        }
+
+        .btn-primary:hover svg {
+            transform: translateX(3px);
+        }
+
+        .btn-secondary {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--grey-400);
+            background: transparent;
+            padding: 14px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            border: 1px solid rgba(159, 179, 200, 0.2);
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--steel);
+            color: var(--steel-light);
+            background: rgba(75, 156, 211, 0.06);
+        }
+
+        .hero-visual {
+            position: relative;
+            animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
+        }
+
+        .hero-card {
+            background: rgba(16, 42, 67, 0.6);
+            border: 1px solid rgba(75, 156, 211, 0.15);
+            border-radius: var(--radius-lg);
+            padding: 36px;
+            backdrop-filter: blur(16px);
+        }
+
+        .hero-card-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 28px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(75, 156, 211, 0.1);
+        }
+
+        .hero-card-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(75, 156, 211, 0.15);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-card-icon svg {
+            width: 24px;
+            height: 24px;
+            color: var(--steel-light);
+        }
+
+        .hero-card-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .hero-card-subtitle {
+            font-size: 0.8rem;
+            color: var(--grey-400);
+            margin-top: 2px;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .hero-stat {
+            background: rgba(75, 156, 211, 0.06);
+            border: 1px solid rgba(75, 156, 211, 0.1);
+            border-radius: 10px;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .hero-stat-value {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--steel-light);
+            letter-spacing: -0.02em;
+        }
+
+        .hero-stat-label {
+            font-size: 0.78rem;
+            color: var(--grey-400);
+            margin-top: 4px;
+            letter-spacing: 0.02em;
+        }
+
+        .hero-trust {
+            position: relative;
+            z-index: 2;
+            margin-top: 48px;
+            display: flex;
+            gap: 36px;
+            flex-wrap: wrap;
+            animation: fadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.8s both;
+        }
+
+        .hero-trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hero-trust-icon {
+            width: 32px;
+            height: 32px;
+            background: rgba(75, 156, 211, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-trust-icon svg {
+            width: 16px;
+            height: 16px;
+            color: var(--steel);
+        }
+
+        .hero-trust-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--grey-400);
+        }
+
+        /* ─── WHY SECTION ─────────────────────────────── */
+
+        .why {
+            padding: 100px 0;
+            background: var(--off-white);
+            position: relative;
+        }
+
+        .why-header {
+            margin-bottom: 56px;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .why-card {
+            background: var(--white);
+            border: 1px solid var(--grey-100);
+            border-radius: var(--radius-lg);
+            padding: 32px 28px;
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--steel), var(--steel-light));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.35s ease;
+        }
+
+        .why-card:hover {
+            border-color: rgba(75, 156, 211, 0.2);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .why-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .why-card-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--ice);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .why-card-icon svg {
+            width: 24px;
+            height: 24px;
+            color: var(--steel);
+        }
+
+        .why-card h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--navy-800);
+            margin-bottom: 10px;
+            letter-spacing: -0.01em;
+        }
+
+        .why-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+        }
+
+        /* ─── HOW IT WORKS ────────────────────────────── */
+
+        .how {
+            padding: 100px 0;
+            background: var(--navy-900);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .how::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 60% 50% at 80% 50%, rgba(75, 156, 211, 0.06) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .how .section-title {
+            color: var(--white);
+        }
+
+        .how .section-subtitle {
+            color: var(--grey-400);
+        }
+
+        .how-header {
+            margin-bottom: 64px;
+        }
+
+        .how-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            position: relative;
+        }
+
+        .how-step {
+            position: relative;
+            background: rgba(16, 42, 67, 0.4);
+            border: 1px solid rgba(75, 156, 211, 0.12);
+            border-radius: var(--radius-lg);
+            padding: 40px 32px 36px;
+            transition: all 0.35s ease;
+        }
+
+        .how-step:hover {
+            border-color: rgba(75, 156, 211, 0.25);
+            background: rgba(16, 42, 67, 0.6);
+            transform: translateY(-4px);
+        }
+
+        .how-step-number {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: rgba(75, 156, 211, 0.1);
+            line-height: 1;
+            position: absolute;
+            top: 16px;
+            right: 24px;
+        }
+
+        .how-step-icon {
+            width: 52px;
+            height: 52px;
+            background: rgba(75, 156, 211, 0.12);
+            border: 1px solid rgba(75, 156, 211, 0.15);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .how-step-icon svg {
+            width: 24px;
+            height: 24px;
+            color: var(--steel-light);
+        }
+
+        .how-step h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .how-step p {
+            font-size: 0.9rem;
+            color: var(--grey-400);
+            line-height: 1.7;
+        }
+
+        /* Connector line between steps */
+        .how-connector {
+            display: none;
+        }
+
+        @media (min-width: 769px) {
+            .how-connector {
+                display: block;
+                position: absolute;
+                top: 66px;
+                left: calc(33.33% - 12px);
+                width: calc(33.33% + 24px);
+                height: 2px;
+                z-index: 1;
+            }
+
+            .how-connector:first-of-type {
+                left: calc(33.33% - 12px);
+            }
+
+            .how-connector:last-of-type {
+                left: calc(66.66% - 12px);
+            }
+
+            .how-connector::before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, rgba(75, 156, 211, 0.3), rgba(75, 156, 211, 0.1));
+                border-radius: 2px;
+            }
+        }
+
+        /* ─── CONTACT FORM ────────────────────────────── */
+
+        .contact {
+            padding: 100px 0;
+            background: var(--off-white);
+            position: relative;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-info {
+            padding-top: 8px;
+        }
+
+        .contact-info .section-title {
+            margin-bottom: 16px;
+        }
+
+        .contact-desc {
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.75;
+            margin-bottom: 36px;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .contact-detail-icon {
+            width: 42px;
+            height: 42px;
+            background: var(--ice);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-detail-icon svg {
+            width: 20px;
+            height: 20px;
+            color: var(--steel);
+        }
+
+        .contact-detail-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--navy-800);
+        }
+
+        .contact-detail-label {
+            font-size: 0.78rem;
+            color: var(--grey-600);
+            font-weight: 400;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .contact-form-card {
+            background: var(--white);
+            border: 1px solid var(--grey-100);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group.full {
+            grid-column: 1 / -1;
+        }
+
+        .form-label {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--navy-800);
+            display: block;
+            margin-bottom: 6px;
+            letter-spacing: 0.01em;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text);
+            background: var(--off-white);
+            border: 1.5px solid var(--grey-200);
+            border-radius: 8px;
+            padding: 12px 16px;
+            transition: all 0.2s ease;
+            outline: none;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            border-color: var(--steel);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(75, 156, 211, 0.1);
+        }
+
+        .form-input::placeholder,
+        .form-textarea::placeholder {
+            color: var(--grey-400);
+        }
+
+        .form-textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            width: 100%;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--white);
+            background: var(--navy-800);
+            border: none;
+            border-radius: 10px;
+            padding: 15px 28px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 6px;
+            letter-spacing: 0.01em;
+        }
+
+        .form-submit:hover {
+            background: var(--navy-700);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(16, 42, 67, 0.25);
+        }
+
+        .form-submit:active {
+            transform: translateY(0);
+        }
+
+        .form-submit svg {
+            width: 18px;
+            height: 18px;
+            transition: transform 0.2s;
+        }
+
+        .form-submit:hover svg {
+            transform: translateX(3px);
+        }
+
+        .form-note {
+            font-size: 0.78rem;
+            color: var(--grey-600);
+            margin-top: 14px;
+            text-align: center;
+        }
+
+        /* ─── FOOTER ──────────────────────────────────── */
+
+        .footer {
+            background: var(--navy-900);
+            padding: 56px 0 32px;
+            border-top: 1px solid rgba(75, 156, 211, 0.08);
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .footer-brand {
+            max-width: 320px;
+        }
+
+        .footer-brand-name {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .footer-brand-name span {
+            color: var(--steel);
+        }
+
+        .footer-brand-desc {
+            font-size: 0.85rem;
+            color: var(--grey-400);
+            line-height: 1.65;
+        }
+
+        .footer-col h4 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--grey-400);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 16px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li + li {
+            margin-top: 10px;
+        }
+
+        .footer-col a {
+            font-size: 0.88rem;
+            color: var(--grey-400);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: var(--steel-light);
+        }
+
+        .footer-bottom {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(75, 156, 211, 0.08);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .footer-copy {
+            font-size: 0.8rem;
+            color: var(--grey-600);
+        }
+
+        .footer-location {
+            font-size: 0.8rem;
+            color: var(--grey-600);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .footer-location svg {
+            width: 14px;
+            height: 14px;
+            color: var(--steel);
+        }
+
+        /* ─── SUCCESS MESSAGE ─────────────────────────── */
+
+        .form-success {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .form-success.show {
+            display: block;
+            animation: scaleIn 0.5s ease;
+        }
+
+        .form-success-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--ice);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .form-success-icon svg {
+            width: 28px;
+            height: 28px;
+            color: var(--steel);
+        }
+
+        .form-success h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--navy-800);
+            margin-bottom: 8px;
+        }
+
+        .form-success p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+        }
+
+        /* ─── RESPONSIVE ──────────────────────────────── */
+
+        @media (max-width: 1024px) {
+            .why-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links,
+            .nav-phone,
+            .nav-cta {
+                display: none;
+            }
+
+            .nav-hamburger {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+                min-height: auto;
+            }
+
+            .hero h1 {
+                font-size: clamp(1.8rem, 6vw, 2.4rem);
+            }
+
+            .hero-visual {
+                order: -1;
+            }
+
+            .hero-trust {
+                gap: 20px;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+
+            .how-steps {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form-card {
+                padding: 28px 24px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .hero-actions a {
+                text-align: center;
+                justify-content: center;
+            }
+        }
+
+        /* ─── STICKY MOBILE CTA ───────────────────────── */
+
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 90;
+            background: var(--navy-800);
+            padding: 12px 20px;
+            transform: translateY(100%);
+            transition: transform 0.35s ease;
+        }
+
+        .sticky-cta.show {
+            transform: translateY(0);
+        }
+
+        .sticky-cta a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--navy-900);
+            background: var(--steel-light);
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .sticky-cta {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ─── NAV ────────────────────────────────────── -->
+    <nav class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#" class="nav-brand">
+                <div class="nav-logo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--steel-light);">
+                        <path d="M14 16H9m10.7-6.3l-1.4-2.8A2 2 0 0 0 16.5 6H7.5a2 2 0 0 0-1.8 1.1L4.3 9.7A2 2 0 0 0 4 10.7V16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5.3a2 2 0 0 0-.3-1Z"/>
+                        <circle cx="7.5" cy="18" r="2.5"/><circle cx="16.5" cy="18" r="2.5"/>
+                    </svg>
+                </div>
+                <div class="nav-brand-text">LOCAL CAR DOCTOR<span>.</span></div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#why">Why Us</a></li>
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="tel:+441234567890" class="nav-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                01onal 234 5678
+            </a>
+
+            <a href="#contact" class="nav-cta">Request Cover</a>
+
+            <button class="nav-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ─── MOBILE MENU ──────────────────────────── -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-panel">
+            <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <ul class="mobile-menu-links">
+                <li><a href="#why">Why Us</a></li>
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="mobile-menu-cta">Request Cover</a>
+        </div>
+    </div>
+
+    <!-- ─── HERO ──────────────────────────────────── -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <div class="hero-badge-dot"></div>
+                        <span>Available for cover</span>
+                    </div>
+
+                    <h1>Skilled Technician Cover <em>When You Need It</em></h1>
+
+                    <p class="hero-sub">Contract vehicle technician for dealerships and garages across Bradford, Leeds & West Yorkshire. Reliable, experienced, ready at short notice.</p>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn-primary">
+                            Request Cover
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#how" class="btn-secondary">
+                            How It Works
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="hero-card-header">
+                            <div class="hero-card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="hero-card-title">Trusted by Local Workshops</div>
+                                <div class="hero-card-subtitle">Bradford, Leeds & West Yorkshire</div>
+                            </div>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="hero-stat">
+                                <div class="hero-stat-value">10+</div>
+                                <div class="hero-stat-label">Years Experience</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-value">24hr</div>
+                                <div class="hero-stat-label">Notice Period</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-value">IMI</div>
+                                <div class="hero-stat-label">Accredited</div>
+                            </div>
+                            <div class="hero-stat">
+                                <div class="hero-stat-value">100%</div>
+                                <div class="hero-stat-label">Satisfaction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-trust">
+                <div class="hero-trust-item">
+                    <div class="hero-trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <span class="hero-trust-text">Fully Insured</span>
+                </div>
+                <div class="hero-trust-item">
+                    <div class="hero-trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <span class="hero-trust-text">DBS Checked</span>
+                </div>
+                <div class="hero-trust-item">
+                    <div class="hero-trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <span class="hero-trust-text">Own Tools & Equipment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── WHY US ────────────────────────────────── -->
+    <section class="why" id="why">
+        <div class="container">
+            <div class="why-header" data-animate>
+                <div class="section-label">Why Choose Us</div>
+                <h2 class="section-title">Keep Your Workshop Moving</h2>
+                <p class="section-subtitle">When a technician calls in sick or you're overloaded with bookings, downtime costs you money. We're your safety net.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card" data-animate style="animation-delay: 0.1s;">
+                    <div class="why-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Available at Short Notice</h3>
+                    <p>Need cover tomorrow? We can mobilise quickly to keep your workshop running when unexpected gaps appear in your team.</p>
+                </div>
+
+                <div class="why-card" data-animate style="animation-delay: 0.2s;">
+                    <div class="why-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3>Experienced & Qualified</h3>
+                    <p>IMI-accredited with years of hands-on experience across all major manufacturers. Diagnostics, servicing, and mechanical repair.</p>
+                </div>
+
+                <div class="why-card" data-animate style="animation-delay: 0.3s;">
+                    <div class="why-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Flexible Contracts</h3>
+                    <p>Day rate, weekly, or longer-term cover — whatever suits your needs. No agency fees, no hidden costs, straightforward pricing.</p>
+                </div>
+
+                <div class="why-card" data-animate style="animation-delay: 0.4s;">
+                    <div class="why-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Local to Your Area</h3>
+                    <p>Based in West Yorkshire, covering Bradford, Leeds, and surrounding areas. No long travel delays — ready to get on with the job.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── HOW IT WORKS ──────────────────────────── -->
+    <section class="how" id="how">
+        <div class="container">
+            <div class="how-header" data-animate>
+                <div class="section-label">How It Works</div>
+                <h2 class="section-title">Three Steps to Cover</h2>
+                <p class="section-subtitle">Getting a qualified technician in your workshop is straightforward. No red tape, no messing about.</p>
+            </div>
+
+            <div class="how-steps">
+                <div class="how-step" data-animate style="animation-delay: 0.1s;">
+                    <div class="how-step-number">01</div>
+                    <div class="how-step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <h3>Get in Touch</h3>
+                    <p>Call, email, or fill in the form below. Tell us when you need cover and for how long — even if it's tomorrow.</p>
+                </div>
+
+                <div class="how-step" data-animate style="animation-delay: 0.25s;">
+                    <div class="how-step-number">02</div>
+                    <div class="how-step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3>We Confirm Availability</h3>
+                    <p>We'll get back to you promptly to confirm dates, discuss the work involved, and agree a fair day rate.</p>
+                </div>
+
+                <div class="how-step" data-animate style="animation-delay: 0.4s;">
+                    <div class="how-step-number">03</div>
+                    <div class="how-step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>Technician On-Site</h3>
+                    <p>We arrive with our own tools, ready to work. Slot straight into your workshop and get the jobs done. No fuss.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CONTACT ───────────────────────────────── -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info" data-animate>
+                    <div class="section-label">Get In Touch</div>
+                    <h2 class="section-title">Request Technician Cover</h2>
+                    <p class="contact-desc">Short-staffed? Need extra hands for a busy period? Drop us a message and we'll get back to you within a few hours.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-detail-label">Phone</span>
+                                <span class="contact-detail-text">01234 567 890</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-detail-label">Email</span>
+                                <span class="contact-detail-text">info@localcardoctor.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-detail-label">Coverage Area</span>
+                                <span class="contact-detail-text">Bradford, Leeds & West Yorkshire</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card" data-animate="scale" style="animation-delay: 0.15s;">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Your Name</label>
+                                <input class="form-input" type="text" id="name" name="name" placeholder="John Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="garage">Garage / Dealership</label>
+                                <input class="form-input" type="text" id="garage" name="garage" placeholder="ABC Motors Ltd" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input class="form-input" type="email" id="email" name="email" placeholder="john@abcmotors.co.uk" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone</label>
+                                <input class="form-input" type="tel" id="phone" name="phone" placeholder="07xxx xxxxxx" required>
+                            </div>
+                        </div>
+                        <div class="form-group full">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea class="form-textarea" id="message" name="message" placeholder="Tell us when you need cover, what type of work, and for how long..."></textarea>
+                        </div>
+                        <button type="submit" class="form-submit" id="submitBtn">
+                            Send Request
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                        <p class="form-note">We typically respond within a few hours during working days.</p>
+                    </form>
+
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <h3>Request Sent</h3>
+                        <p>Thanks for getting in touch. We'll review your request and get back to you as soon as possible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ────────────────────────────────── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-brand-name">LOCAL CAR DOCTOR<span>.</span></div>
+                    <p class="footer-brand-desc">Contract vehicle technician cover for dealerships and garages. Reliable, qualified, and local to West Yorkshire.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#why">Why Us</a></li>
+                        <li><a href="#how">How It Works</a></li>
+                        <li><a href="#contact">Request Cover</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+441234567890">01234 567 890</a></li>
+                        <li><a href="mailto:info@localcardoctor.com">info@localcardoctor.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span class="footer-copy">&copy; 2026 Local Car Doctor. All rights reserved.</span>
+                <span class="footer-location">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Bradford, Leeds & West Yorkshire
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ─── STICKY MOBILE CTA ─────────────────────── -->
+    <div class="sticky-cta" id="stickyCta">
+        <a href="#contact">
+            Request Technician Cover
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+    </div>
+
+    <script>
+        // ─── NAV SCROLL ──────────────────────────────
+        const nav = document.getElementById('nav');
+        const hero = document.getElementById('hero');
+        const stickyCta = document.getElementById('stickyCta');
+
+        function handleScroll() {
+            const scrollY = window.scrollY;
+            nav.classList.toggle('scrolled', scrollY > 50);
+
+            if (window.innerWidth <= 768) {
+                const heroBottom = hero.offsetTop + hero.offsetHeight;
+                stickyCta.classList.toggle('show', scrollY > heroBottom - 200);
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        handleScroll();
+
+        // ─── MOBILE MENU ─────────────────────────────
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileClose = document.getElementById('mobileClose');
+
+        function toggleMenu(open) {
+            mobileMenu.classList.toggle('open', open);
+            hamburger.setAttribute('aria-expanded', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', () => toggleMenu(true));
+        mobileClose.addEventListener('click', () => toggleMenu(false));
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) toggleMenu(false);
+        });
+
+        document.querySelectorAll('.mobile-menu-links a, .mobile-menu-cta').forEach(link => {
+            link.addEventListener('click', () => toggleMenu(false));
+        });
+
+        // ─── SCROLL ANIMATIONS ───────────────────────
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+        // ─── FORM HANDLING ───────────────────────────
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const formSuccess = document.getElementById('formSuccess');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending...';
+
+            const formData = {
+                name: document.getElementById('name').value,
+                garage: document.getElementById('garage').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                message: document.getElementById('message').value,
+                source: 'localcardoctor.com',
+                submitted_at: new Date().toISOString()
+            };
+
+            try {
+                // Placeholder: replace with your webhook URL
+                // await fetch('https://your-webhook-url.com/endpoint', {
+                //     method: 'POST',
+                //     headers: { 'Content-Type': 'application/json' },
+                //     body: JSON.stringify(formData)
+                // });
+
+                // Simulate success for now
+                await new Promise(resolve => setTimeout(resolve, 800));
+
+                form.style.display = 'none';
+                formSuccess.classList.add('show');
+            } catch (err) {
+                // Still show success to not lose the lead
+                form.style.display = 'none';
+                formSuccess.classList.add('show');
+            }
+        });
+
+        // ─── SMOOTH SCROLL ───────────────────────────
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = nav.offsetHeight + 20;
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
